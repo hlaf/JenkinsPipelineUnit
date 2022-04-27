@@ -5,7 +5,7 @@ import org.junit.Test
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.rules.ExpectedException
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.containsString;
 
 import com.lesfurets.jenkins.unit.cps.BasePipelineTestCPS
 import static com.lesfurets.jenkins.unit.global.lib.LibraryConfiguration.library
