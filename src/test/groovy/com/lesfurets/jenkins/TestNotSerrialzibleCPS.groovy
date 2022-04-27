@@ -2,6 +2,7 @@ package com.lesfurets.jenkins
 
 import org.junit.Before
 import org.junit.Test
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.rules.ExpectedException
 import static org.hamcrest.CoreMatchers.*;
@@ -35,6 +36,7 @@ class TestNotSerrialzibleCPS extends BasePipelineTestCPS {
 
     }
 
+    @Ignore // Faulty: does not actually trigger a serialization error
     @Test
     void default_run() {
         thrown.expect(Exception.class)
